@@ -54,11 +54,14 @@ git add .
 # Buat commit
 git commit -m "Initial commit"
 
+# Menambahkan Branch Main
+git branch -M main
+
 # Tambahkan remote repository GitHub Anda
-git remote add origin git@github.com:fahernkhan/Setup-server-script.git
+git remote add origin https://github.com/fahernkhan/Setup-server-script.git
 
 # Push ke repository GitHub
-git push -u origin master
+git push -u origin main
 
 # Jika ada error dalam proses push, tampilkan pesan kesalahan
 if [ $? -ne 0 ]; then
