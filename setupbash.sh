@@ -42,21 +42,20 @@ log "Memulai proses push ke GitHub"
 git config --global user.name "fahernkhan"
 git config --global user.email "fathurrahmanhernanda123@gmail.com"
 
-
 # Inisialisasi repository lokal
 git init
-
-# Tambahkan remote repository GitHub Anda
-git remote add origin https://github.com/fahernkhan/Setup-server-script.git
-
-# Menambahkan Branch Main
-git branch -M main
 
 # Tambahkan semua perubahan ke repository
 git add .
 
 # Buat commit
 git commit -m "Initial commit"
+
+# Menambahkan Branch Main
+git branch -M main
+
+# Tambahkan remote repository GitHub Anda
+git remote add origin git@github.com:fahernkhan/Setup-server-script.git
 
 # Push ke repository GitHub
 git push -u origin main
