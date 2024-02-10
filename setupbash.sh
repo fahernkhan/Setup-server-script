@@ -55,7 +55,7 @@ git add .
 git commit -m "Initial commit"
 
 # Tambahkan remote repository GitHub Anda
-git remote add origin https://github.com/$USERNAME/Setup-server-script.git
+git remote set-url origin git@github.com:$USERNAME/Setup-server-script.git
 
 # Push ke repository GitHub
 git push -u origin master
